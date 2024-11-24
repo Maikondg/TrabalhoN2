@@ -1,0 +1,69 @@
+Algoritmos e Programa¸c˜ao Estruturada
+Trabalho em Grupo N2
+v:1.0.1
+1 Instru¸c˜oes Iniciais
+Desenvolver um jogo interativo utilizando a linguagem de programa¸c˜ao C.
+2 C´odigos-fonte
+Crie um reposit´orio git (Github ou Gitlab).
+Todos os c´odigo produzidos devem estar em arquivos .c, .h ou Makefile *.
+* exce¸c˜ao descrita na se¸c˜ao 3.3.2.
+Algumas dicas para c´odigos bem feitos:
+• Nomes Claros e Significativos: Use nomes descritivos para vari´aveis, fun¸c˜oes e classes. Por exemplo,
+calcularMedia ´e mais claro do que calc.
+• Simplicidade e Clareza: Escreva fun¸c˜oes pequenas que realizam uma ´unica tarefa. Isso facilita a leitura e
+a manuten¸c˜ao do c´odigo.
+• Indenta¸c˜ao Consistente: Mantenha uma indenta¸c˜ao consistente para melhorar a legibilidade. Isso ajuda a
+visualizar a estrutura do c´odigo facilmente.
+• Evite Repeti¸c˜ao: Siga o princ´ıpio DRY (Don’t Repeat Yourself). Reutilize c´odigo sempre que poss´ıvel para
+evitar duplica¸c˜ao.
+• Seja honesto: Vocˆe n˜ao aprende nada copiando c´odigo de terceiros (isso inclui IAs) nem pedindo a uma
+pessoa externa ao grupo que fa¸ca o trabalho por vocˆe. Se a c´opia for detectada, a nota de vocˆes ser´a zerada
+e as devidas providˆencias ser˜ao tomadas.
+3 Desafio
+Para cria¸c˜ao do jogo, ser´a necess´ario atender aos seguintes requisitos:
+3.1 Estrutura do Programa
+3.1.1 Struct
+Cada componente do jogo dever´a ser descrito por uma struct. Se n˜ao for necess´ario para o componente, n˜ao
+precisa utilizar. Contudo, o jogo dever´a ter componentes em structs.
+3.1.2 Aloca¸c˜ao Dinˆamica
+Todos os componentes do jogo que podem surgir ou deixar de existir durante a fase dever˜ao ser feitos via aloca¸c˜ao
+dinˆamica.
+3.1.3 Arquivos
+O jogo dever´a ter 5 fases diferentes escritas em 5 arquivos diferentes, carregadas quando a fase for iniciada.
+Tamb´em dever´a ter um arquivo bin´ario com as estat´ısticas do jogo.
+3.2 Jogo
+3.2.1 Tela principal
+A tela principal dever´a ter 2 menus:
+• Iniciar jogo
+• Estat´ısticas
+Lembre-se de salvar os placares dos usu´arios para adicionar em Estat´ısticas.
+3.2.2 Iniciar Jogo
+Quando o jogar iniciar o jogo, as fases ser˜ao carregadas em sequˆencia, em ordem, quando o usu´ario finalizar a
+atual, carrega a pr´oxima. Quando o usu´ario ”perder”, o placar dele dever´a ser salvo.
+3.3 Pontos Extras
+3.3.1 Fases geradas Proceduralmente
+Vocˆe pode criar uma rotina que crie as fases proceduralmente, contudo, essas dever˜ao compor a 6ª fase em
+diante.
+As primeiras 5 fases dever˜ao ser est´aticas, guardadas em arquivo.
+3.3.2 Interface Gr´afica
+Vocˆe pode criar a interface do jogo utilizando outras ferramentas (como o OpenGL, por exemplo).
+E a ´unica parte do trabalho que permite o uso de outras linguagens e ferramentas. ´
+3.3.3 Tela Principal
+Vocˆe pode criar outros menus na tela principal e outras funcionalidades al´em das descritas na se¸c˜ao 3.2.1.
+Alguns exemplos:
+• Continuar
+• Configura¸c˜ao de controle
+• Tela de Fim de Jogo
+4 Exemplo
+Um exemplo simples ´e o cl´assico jogo Snake.
+4.1 Partes da Cobra
+Cada parte da cobra pode ser uma struct que conter´a um ponteiro para a pr´oxima parte, caso seja a ponta do
+rabo da cobra, o ponteiro ´e NULL.
+A cobra ser´a uma lista encadeada, iniciando da boca da cobra.
+4.2 Alimentos
+Os alimentos tamb´em podem ser structs.
+Os alimentos ser˜ao compostos pelas posi¸c˜oes x e y. Vocˆe pode acrescentar mais componentes que aumentem as
+caracter´ısticas dos alimentos. Use a criatividade.
+4.3 Tabuleiro
+Vocˆe pode construir 5 tabuleiros, em 5 arquivos separados, o primeiro pode ser a fase sem obst´aculos, os demais
+podem ser
